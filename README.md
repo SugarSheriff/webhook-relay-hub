@@ -2,6 +2,8 @@
 
 **Webhooks get lost, duplicated, and forged. This service makes sure they don't.**
 
+**[Live demo →](https://sugarsheriff.github.io/webhook-relay-hub/)** (runs the same rules in your browser)
+
 The Relay Hub sits between the apps that send webhooks (GitHub, Stripe, Shopify...) and the apps that need them. Every incoming message is checked to be genuine, saved exactly once, and delivered to each subscribed app, with automatic retries when a receiver is down. A live dashboard shows every message, and any delivery can be replayed with one click.
 
 Built with C# / .NET 10, ASP.NET Core Minimal APIs, Entity Framework Core and SQLite.
